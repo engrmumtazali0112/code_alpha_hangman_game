@@ -51,11 +51,17 @@ Django==3.2.3
 selenium==3.141.0
 
 Contact:
+
 Email : engrmumtazali01@gmail.com
+
 Phone# : 03476338292
+
 Link : ------------------
+
 Linkedln : https://www.linkedin.com/in/mumtazali12/
+
 Fiver : https://www.fiverr.com/s/6YzwedB
+
 Upwork : https://www.upwork.com/nx/find-work/best-matches
 
 
