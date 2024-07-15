@@ -1,6 +1,14 @@
 # Hangman Adventure Django
 
-A responsive Hangman game built with Django.
+A responsive Hangman game built with Django, developed as part of the Code Alpha internship program.
+
+## About Code Alpha
+
+Code Alpha is a dynamic and innovative company that provides internship opportunities for aspiring developers and tech enthusiasts. They offer a range of projects that challenge interns to apply their skills in real-world scenarios, fostering growth and practical experience in software development.
+
+This Hangman Adventure game was developed as part of the Code Alpha internship program, demonstrating skills in web development, responsive design, and game logic implementation.
+
+
 
 ## Features
 
@@ -74,40 +82,5 @@ git push origin main
 
 Create a .github/workflows/django.yml file for GitHub Actions:
 
-yamlname: Django CI
+For more information about Code Alpha and their internship programs, visit [Code Alpha's website] https://www.codealpha.tech/
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 4
-      matrix:
-        python-version: [3.7, 3.8, 3.9]
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ matrix.python-version }}
-    - name: Install Dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-    - name: Run Tests
-      run: |
-        python manage.py test
-
-Commit and push the workflow file:
-
-bashgit add .github/workflows/django.yml
-git commit -m "Add GitHub Actions workflow for Django CI"
-git push origin main
-
-link: 
